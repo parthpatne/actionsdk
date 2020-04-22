@@ -1,6 +1,6 @@
 {
   "name": "actionsdk2",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "THIS IS TEST SDK FOR TESTING PARTH",
   "main": "index.js",
   "scripts": {
