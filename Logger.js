@@ -14,24 +14,24 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var ActionHostInterface_1 = require("./ActionHostInterface");
-var _actionCommon_1 = require("@actionCommon");
+var src_1 = require("./ActionCommon/src");
 var Logger = /** @class */ (function (_super) {
     __extends(Logger, _super);
     function Logger() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Logger.logInternal = function (logLevel, logTag, logMessage) {
-        ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.LogTelemetry, [_actionCommon_1.LogCategory.ActionLogs, logLevel, logTag, logMessage]);
+        ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.LogTelemetry, [src_1.LogCategory.ActionLogs, logLevel, logTag, logMessage]);
     };
     Logger.logEventInternal = function (eventName, eventProps) {
         if (eventProps === void 0) { eventProps = null; }
-        ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.LogTelemetry, [_actionCommon_1.LogCategory.ActionEvents, eventName, eventProps]);
+        ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.LogTelemetry, [src_1.LogCategory.ActionEvents, eventName, eventProps]);
     };
     Logger.logMetricInternal = function (metricState, metricName, metricProps, metricDuration) {
         if (metricProps === void 0) { metricProps = null; }
         if (metricDuration === void 0) { metricDuration = 0; }
-        ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.LogTelemetry, [_actionCommon_1.LogCategory.ActionMetrics, metricState, metricName, metricProps, metricDuration]);
+        ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.LogTelemetry, [src_1.LogCategory.ActionMetrics, metricState, metricName, metricProps, metricDuration]);
     };
     return Logger;
-}(_actionCommon_1.ILogger));
+}(src_1.ILogger));
 exports.Logger = Logger;

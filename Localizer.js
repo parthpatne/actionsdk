@@ -44,7 +44,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var ActionHostInterface_1 = require("./ActionHostInterface");
-var _actionCommon_1 = require("@actionCommon");
+var src_1 = require("./ActionCommon/src");
 var Localizer = /** @class */ (function () {
     function Localizer() {
     }
@@ -61,7 +61,7 @@ var Localizer = /** @class */ (function () {
                 switch (_b.label) {
                     case 0:
                         _a = this;
-                        return [4 /*yield*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetLocalizedActionStrings)];
+                        return [4 /*yield*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetLocalizedActionStrings)];
                     case 1:
                         _a.jsonObject = _b.sent();
                         return [2 /*return*/, true];

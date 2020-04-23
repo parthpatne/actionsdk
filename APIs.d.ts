@@ -1,4 +1,4 @@
-import { ActionInstance, ActionInstanceRow, ActionInstanceSummary, ActionInstanceRowsFetchResult, ActionInstanceUpdateInfo, UserProfile, UserProfilesFetchResult, ProfilePhotosFetchResult, MemberCount, NonResponder, ActionContext, NavBarMenuItem, FilteredActionInstanceRequest, FilteredActionInstanceResponse, FilteredTemplateActionInstanceResponse, ConversationInfo, TeamsGroup, GetChannelsForTeamsResponse } from "@actionCommon";
+import { ActionInstance, ActionInstanceRow, ActionInstanceSummary, ActionInstanceRowsFetchResult, ActionInstanceUpdateInfo, UserProfile, UserProfilesFetchResult, ProfilePhotosFetchResult, MemberCount, NonResponder, ActionContext, NavBarMenuItem, FilteredActionInstanceRequest, FilteredActionInstanceResponse, FilteredTemplateActionInstanceResponse, ConversationInfo, TeamsGroup, GetChannelsForTeamsResponse } from "./ActionCommon/src";
 export declare namespace APIs {
     /**
     * Creates a new Action instance

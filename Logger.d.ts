@@ -1,4 +1,4 @@
-import { ILogger, LogLevel, LogMetricState } from '@actionCommon';
+import { ILogger, LogLevel, LogMetricState } from "./ActionCommon/src";
 export declare class Logger extends ILogger {
     protected static logInternal(logLevel: LogLevel, logTag: string, logMessage: string): void;
     protected static logEventInternal(eventName: string, eventProps?: any): void;

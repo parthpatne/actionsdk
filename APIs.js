@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var ActionHostInterface_1 = require("./ActionHostInterface");
-var _actionCommon_1 = require("@actionCommon");
+var src_1 = require("./ActionCommon/src");
 var APIs;
 (function (APIs) {
     /**
@@ -48,7 +48,7 @@ var APIs;
     function createActionInstance(actionInstance, viewData) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.CreateActionInstance, [actionInstance, viewData])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.CreateActionInstance, [actionInstance, viewData])];
             });
         });
     }
@@ -62,7 +62,7 @@ var APIs;
     function createActionInstanceWithRows(actionInstance, actionInstanceRows, viewData) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.CreateActionInstanceWithRows, [actionInstance, actionInstanceRows, viewData])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.CreateActionInstanceWithRows, [actionInstance, actionInstanceRows, viewData])];
             });
         });
     }
@@ -75,7 +75,7 @@ var APIs;
     function getActionInstance(actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetActionInstance, [actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetActionInstance, [actionInstanceId])];
             });
         });
     }
@@ -89,7 +89,7 @@ var APIs;
     function updateActionInstance(actionInstanceId, actionInstanceUpdateInfo) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.UpdateActionInstance, [actionInstanceId, actionInstanceUpdateInfo])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.UpdateActionInstance, [actionInstanceId, actionInstanceUpdateInfo])];
             });
         });
     }
@@ -102,7 +102,7 @@ var APIs;
     function deleteActionInstance(actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.DeleteActionInstance, [actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.DeleteActionInstance, [actionInstanceId])];
             });
         });
     }
@@ -115,7 +115,7 @@ var APIs;
     function sendActionInstanceReminder(actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.SendActionInstanceReminder, [actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.SendActionInstanceReminder, [actionInstanceId])];
             });
         });
     }
@@ -129,7 +129,7 @@ var APIs;
     function createOrUpdateActionInstanceRows(actionInstanceId, actionInstanceRows) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.CreateOrUpdateActionInstanceRows, [actionInstanceId, actionInstanceRows])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.CreateOrUpdateActionInstanceRows, [actionInstanceId, actionInstanceRows])];
             });
         });
     }
@@ -143,7 +143,7 @@ var APIs;
     function getActionInstanceRow(actionInstanceId, actionInstanceRowId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetActionInstanceRow, [actionInstanceId, actionInstanceRowId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetActionInstanceRow, [actionInstanceId, actionInstanceRowId])];
             });
         });
     }
@@ -160,7 +160,7 @@ var APIs;
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 // TODO: The following implementation will be udpated once continuationToken support is added on service
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetActionInstanceRows, [actionInstanceId, creatorId, continuationToken, pageSize])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetActionInstanceRows, [actionInstanceId, creatorId, continuationToken, pageSize])];
             });
         });
     }
@@ -174,7 +174,7 @@ var APIs;
     function deleteActionInstanceRow(actionInstanceId, actionInstanceRowId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.DeleteActionInstanceRow, [actionInstanceId, actionInstanceRowId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.DeleteActionInstanceRow, [actionInstanceId, actionInstanceRowId])];
             });
         });
     }
@@ -189,7 +189,7 @@ var APIs;
         if (isShortSummary === void 0) { isShortSummary = true; }
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetActionInstanceSummary, [actionInstanceId, isShortSummary])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetActionInstanceSummary, [actionInstanceId, isShortSummary])];
             });
         });
     }
@@ -203,7 +203,7 @@ var APIs;
         if (fileName === void 0) { fileName = null; }
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.DownloadActionInstanceResult, [actionInstanceId, fileName])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.DownloadActionInstanceResult, [actionInstanceId, fileName])];
             });
         });
     }
@@ -216,7 +216,7 @@ var APIs;
     function getActionInstanceNonResponders(actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetActionInstanceNonResponoders, [actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetActionInstanceNonResponoders, [actionInstanceId])];
             });
         });
     }
@@ -230,7 +230,7 @@ var APIs;
     function getConversationMembersCount(conversationInfo, actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetConversationMembersCount, [conversationInfo, actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetConversationMembersCount, [conversationInfo, actionInstanceId])];
             });
         });
     }
@@ -244,7 +244,7 @@ var APIs;
     function getConversationMembers(conversationInfo, actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetConversationMembers, [conversationInfo, actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetConversationMembers, [conversationInfo, actionInstanceId])];
             });
         });
     }
@@ -258,7 +258,7 @@ var APIs;
     function getUserProfiles(userIDs, actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetUserProfiles, [userIDs, actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetUserProfiles, [userIDs, actionInstanceId])];
             });
         });
     }
@@ -271,7 +271,7 @@ var APIs;
     function getUserProfilePhotos(userIDs) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetUserProfilePhotos, [userIDs])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetUserProfilePhotos, [userIDs])];
             });
         });
     }
@@ -285,7 +285,7 @@ var APIs;
     function setNavBarMenuItems(menuItems, callback) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.registerActionSDKCallback(_actionCommon_1.ActionSdkCommand.SetNavBarMenuItems, [menuItems], callback)];
+                return [2 /*return*/, ActionHostInterface_1.Host.registerActionSDKCallback(src_1.ActionSdkCommand.SetNavBarMenuItems, [menuItems], callback)];
             });
         });
     }
@@ -297,7 +297,7 @@ var APIs;
     function getCurrentContext() {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetCurrentContext)];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetCurrentContext)];
             });
         });
     }
@@ -309,7 +309,7 @@ var APIs;
     function dismissScreen() {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.DismissScreen)];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.DismissScreen)];
             });
         });
     }
@@ -321,7 +321,7 @@ var APIs;
     function showDiagnosticView() {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.ShowDiagnosticView)];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.ShowDiagnosticView)];
             });
         });
     }
@@ -333,7 +333,7 @@ var APIs;
     function hideLoadingIndicator() {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.HideLoadingIndicator, [])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.HideLoadingIndicator, [])];
             });
         });
     }
@@ -352,7 +352,7 @@ var APIs;
                     return [2 /*return*/];
                 }
                 actionViewLoadCalled = true;
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.ActionViewDidLoad, [success, props])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.ActionViewDidLoad, [success, props])];
             });
         });
     }
@@ -365,7 +365,7 @@ var APIs;
     function registerBackButtonHandler(handler) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.registerActionSDKCallback(_actionCommon_1.ActionSdkCommand.RegisterBackButtonHandler, [], handler)];
+                return [2 /*return*/, ActionHostInterface_1.Host.registerActionSDKCallback(src_1.ActionSdkCommand.RegisterBackButtonHandler, [], handler)];
             });
         });
     }
@@ -378,7 +378,7 @@ var APIs;
     function getTemplateActions(filter) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetTemplateActions, [filter])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetTemplateActions, [filter])];
             });
         });
     }
@@ -391,7 +391,7 @@ var APIs;
     function getActionInstances(filter) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetActionInstances, [filter])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetActionInstances, [filter])];
             });
         });
     }
@@ -404,7 +404,7 @@ var APIs;
     function getDraftActionInstances(filter) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetDraftActionInstances, [filter])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetDraftActionInstances, [filter])];
             });
         });
     }
@@ -417,7 +417,7 @@ var APIs;
     function saveActionInstanceDraft(actionInstance) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.SaveActionInstanceDraft, [actionInstance])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.SaveActionInstanceDraft, [actionInstance])];
             });
         });
     }
@@ -430,7 +430,7 @@ var APIs;
     function updateActionInstanceDraft(actionInstance) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.UpdateActionInstanceDraft, [actionInstance])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.UpdateActionInstanceDraft, [actionInstance])];
             });
         });
     }
@@ -442,7 +442,7 @@ var APIs;
     function promoteDraftToAction(actionInstanceId) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.PromoteDraftToAction, [actionInstanceId])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.PromoteDraftToAction, [actionInstanceId])];
             });
         });
     }
@@ -455,7 +455,7 @@ var APIs;
     function createActionInstanceNoBot(actionInstance) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.CreateActionInstanceNoBot, [actionInstance])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.CreateActionInstanceNoBot, [actionInstance])];
             });
         });
     }
@@ -468,7 +468,7 @@ var APIs;
     function getJoinedTeams() {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetJoinedTeams)];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetJoinedTeams)];
             });
         });
     }
@@ -481,7 +481,7 @@ var APIs;
     function getListOfChannelsForGroups(listOfGroups) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(_actionCommon_1.ActionSdkCommand.GetListOfChannelsForGroups, [listOfGroups])];
+                return [2 /*return*/, ActionHostInterface_1.Host.executeActionSDKApi(src_1.ActionSdkCommand.GetListOfChannelsForGroups, [listOfGroups])];
             });
         });
     }

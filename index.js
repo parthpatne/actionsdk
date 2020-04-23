@@ -1,26 +1,43 @@
 "use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
 // Exporting all data models
-var _actionCommon_1 = require("@actionCommon");
-exports.ActionInstanceColumnType = _actionCommon_1.ActionInstanceColumnType;
-exports.ActionInstancePropertyType = _actionCommon_1.ActionInstancePropertyType;
-exports.ActionInstancePropertyUpdateType = _actionCommon_1.ActionInstancePropertyUpdateType;
-exports.ActionInstanceStatus = _actionCommon_1.ActionInstanceStatus;
-exports.AttachmentType = _actionCommon_1.AttachmentType;
-exports.ClientType = _actionCommon_1.ClientType;
-exports.NotificationSettingMode = _actionCommon_1.NotificationSettingMode;
-exports.Visibility = _actionCommon_1.Visibility;
-exports.ActionEnvironment = _actionCommon_1.ActionEnvironment;
-exports.ActionErrorCode = _actionCommon_1.ActionErrorCode;
-exports.LogLevel = _actionCommon_1.LogLevel;
-exports.NavBarMenuListType = _actionCommon_1.NavBarMenuListType;
-exports.AMSClient = _actionCommon_1.AMSClient;
-exports.AttachmentStatus = _actionCommon_1.AttachmentStatus;
-exports.HttpStatusCode = _actionCommon_1.HttpStatusCode;
+var src_1 = require("./ActionCommon/src");
+exports.ActionErrorCode = src_1.ActionErrorCode;
+exports.LogLevel = src_1.LogLevel;
+exports.HttpStatusCode = src_1.HttpStatusCode;
 // Exporting utilities
-var _actionCommon_2 = require("@actionCommon");
-exports.Utils = _actionCommon_2.Utils;
-exports.ActionUtils = _actionCommon_2.ActionUtils;
+var src_2 = require("./ActionCommon/src");
+exports.Utils = src_2.Utils;
+exports.ActionUtils = src_2.ActionUtils;
+__export(require("./ActionContext"));
+__export(require("./ActionEnvironment"));
+var ActionInstanceColumn_1 = require("./ActionInstanceColumn");
+exports.ActionInstanceColumn = ActionInstanceColumn_1.ActionInstanceColumn;
+var ActionInstanceColumnOption_1 = require("./ActionInstanceColumnOption");
+exports.ActionInstanceColumnOption = ActionInstanceColumnOption_1.ActionInstanceColumnOption;
+var ActionInstanceColumnType_1 = require("./ActionInstanceColumnType");
+exports.ActionInstanceColumnType = ActionInstanceColumnType_1.ActionInstanceColumnType;
+var ActionInstancePropertyType_1 = require("./ActionInstancePropertyType");
+exports.ActionInstancePropertyType = ActionInstancePropertyType_1.ActionInstancePropertyType;
+var ActionInstancePropertyUpdateType_1 = require("./ActionInstancePropertyUpdateType");
+exports.ActionInstancePropertyUpdateType = ActionInstancePropertyUpdateType_1.ActionInstancePropertyUpdateType;
+var ActionInstanceStatus_1 = require("./ActionInstanceStatus");
+exports.ActionInstanceStatus = ActionInstanceStatus_1.ActionInstanceStatus;
+var AttachmentType_1 = require("./AttachmentType");
+exports.AttachmentType = AttachmentType_1.AttachmentType;
+var ClientType_1 = require("./ClientType");
+exports.ClientType = ClientType_1.ClientType;
+var NotificationSettingMode_1 = require("./NotificationSettingMode");
+exports.NotificationSettingMode = NotificationSettingMode_1.NotificationSettingMode;
+var Visibility_1 = require("./Visibility");
+exports.Visibility = Visibility_1.Visibility;
+var NavBarMenuListType_1 = require("./NavBarMenuListType");
+exports.NavBarMenuListType = NavBarMenuListType_1.NavBarMenuListType;
+var AtachmentStatus_1 = require("./AtachmentStatus");
+exports.AttachmentStatus = AtachmentStatus_1.AttachmentStatus;
 // Exporting all apis
 var APIs_1 = require("./APIs");
 exports.APIs = APIs_1.APIs;
