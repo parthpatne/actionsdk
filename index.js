@@ -2,9 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // Exporting all data models
 var _actionCommon_1 = require("@actionCommon");
-exports.ActionInstance = _actionCommon_1.ActionInstance;
-exports.ActionInstanceColumn = _actionCommon_1.ActionInstanceColumn;
-exports.ActionInstanceColumnOption = _actionCommon_1.ActionInstanceColumnOption;
 exports.ActionInstanceColumnType = _actionCommon_1.ActionInstanceColumnType;
 exports.ActionInstancePropertyType = _actionCommon_1.ActionInstancePropertyType;
 exports.ActionInstancePropertyUpdateType = _actionCommon_1.ActionInstancePropertyUpdateType;
@@ -13,7 +10,6 @@ exports.AttachmentType = _actionCommon_1.AttachmentType;
 exports.ClientType = _actionCommon_1.ClientType;
 exports.NotificationSettingMode = _actionCommon_1.NotificationSettingMode;
 exports.Visibility = _actionCommon_1.Visibility;
-exports.ActionContext = _actionCommon_1.ActionContext;
 exports.ActionEnvironment = _actionCommon_1.ActionEnvironment;
 exports.ActionErrorCode = _actionCommon_1.ActionErrorCode;
 exports.LogLevel = _actionCommon_1.LogLevel;
